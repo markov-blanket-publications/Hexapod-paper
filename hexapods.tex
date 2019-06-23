@@ -1,0 +1,151 @@
+\documentclass{article}
+
+% ready for submission
+\usepackage{arxiv}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2018}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2018}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}
+
+\title{Why don't hexapods gallop?}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\author{%
+  Aidan Rocke\\
+  \texttt{aidanrocke@gmail.com} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+\begin{document}
+% \nipsfinalcopy is no longer used
+
+\maketitle
+
+\begin{abstract}
+   The main contribution of this paper is to explain why the overwhelming majority of hexapods don't employ the rectilinear gallop using simple mechanical arguments. 
+\end{abstract}
+
+\section{Three constraints on galloping quadrupeds:}
+
+1. For all quadrupeds the rectilinear gallop necessarily employs one phase where its limbs are in contact with the ground and a second flight phase where its limbs are
+not in contact with the ground. 
+
+2. Given that the rectilinear gallop requires that the organism travel in approximately a straight line in a single direction there is a necessary division of mechanical labour. The forelimbs 
+are specialised for traction whereas the hind limbs are specialised for propulsion. 
+
+3. The division of mechanical labour implies that the forelimbs are in phase with each other and out of phase with the hind limbs. 
+
+Given that four limbs are necessary for galloping and many quadrupedal mammals can gallop, four limbs are also sufficient. 
+
+\section{Energetic costs on galloping hexapods:}
+
+In order to demonstrate that hexapods have no advantage over galloping quadrupeds we shall compare a hexapod $H$ and a quadruped $Q$ 
+of equal mass and analyse the energetic difference.  
+
+1. In order for this hexapod to gallop as fast as a similarly-sized quadruped it must have similar limb lengths
+since, according to the dynamic similarity hypothesis [2], rectilinear acceleration is approximated by: 
+
+\begin{equation}
+a \approx \frac{v^2}{L}
+\end{equation}
+
+2. Given the equal mass assumption, each limb will experience similar normal forces. Now, given that 
+tensile strength is proportional to cross-sectional area, a cylindrical limb approximation yields: 
+
+\begin{equation}
+M \cdot \frac{v^2}{L} \propto R_{H} \Longrightarrow \langle R_{H} \rangle \approx \langle R_{Q} \rangle
+\end{equation}
+
+where $\langle R_{H} \rangle$ denotes the average limb radius of the hexapod.  
+
+3. If we assume that the hexapod and quadruped have identical cylindrical limbs we may note that the rotational kinetic energy consumed by 
+the hexapod, $E_{rot}^H$ is approximately: 
+
+\begin{equation}
+E_{rot}^H \approx 1.5 \cdot E_{rot}^Q
+\end{equation}
+
+since each limb must be actuated independently of the others. 
+
+\newpage
+
+\section{Strengths and Limitations of Hexapod locomotion}
+
+\begin{figure}
+\begin{center}
+  \includegraphics[scale=0.07]{/Users/aidanrockea/Desktop/blog_images/_images/hexapod.jpg}
+  \caption{alternating tripod gait of a hexapod}
+  \label{fig:alternating tripod gait of a hexapod}
+\end{center}
+\end{figure}
+
+
+1. \textbf{Limitations:} 
+
+Although reductive, our comparison of the energetic profiles of hexapods vs. quadrupeds indicates that in the presence
+of macroscopic forces a hexapod is unlikely to outrun a quadruped. In other words, a cheetah born with 
+six limbs rather than four is unlikely to succeed in passing down its genes. That said, in 2013 three galloping beetles were 
+discovered [3]. \par
+
+The authors of [3] note that although \textit{P. endroedyi}, \textit{P. hippocrates} and \textit{P. glentoni} can walk using the normal tripod gait these 
+beetles usually employ a unique galloping gait where they move each pair synchronously, stepping alternating with the front 
+and middle legs. The hind legs are dragged behind even if the beetle carries no load and seem to contribute little to propulsion. \par
+
+2. \textbf{Strengths:}
+
+The advantage of hexapods over quadrupeds emerges when instead of emphasising speed/acceleration we focus on 
+static stability. Six limbs is the smallest number of limbs that allows an organism to utilise an alternating tripod gait, which 
+allows its centre of gravity to always lie within the area of support. It follows that the hexapod, unlike the quadruped, has the 
+advantage of static stability at every instant of locomotion and therefore consumes less energy at low speeds. \par
+
+\section*{References}
+
+\small
+
+[1] C. Vaughan \ \& M. Malley.\ Froude and the contribution of naval architecture to our understanding of bipedal locomotion.\ 2004.
+
+[2] Alexander RM, Jayes AS.\ A dynamic similarity hypothesis for the gaits of quadrupedal mammals.\ 1983. 
+
+[3] Smolka et al.\ A new galloping gait in an insect.\ 2013.
+
+\end{document}
